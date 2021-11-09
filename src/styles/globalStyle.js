@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --border-color: #2e344e;
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
+    --background-light-color-3: #191d2b;
     --white-color: #FFF;
     --font-light-color: #a4acc4;
     --font-dark-color: #313131;

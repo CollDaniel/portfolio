@@ -14,12 +14,13 @@ function App() {
     <div className="App">
       <SideBar />
      <MainContentStyled>
-        <div className="lines">
+      
+     {/* <div className="lines">
           <div className="line-1"></div>  
           <div className="line-2"></div>  
           <div className="line-3"></div>  
           <div className="line-4"></div>  
-        </div>
+        </div> */}
 
     <Switch>
       <Route path="/" exact>
@@ -42,6 +43,8 @@ function App() {
       </Route>
     </Switch>
 
+    
+
      </MainContentStyled>
     </div>
   );
@@ -54,7 +57,7 @@ const MainContentStyled = styled.main`
 
   .lines{
     position: absolute;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
