@@ -33,13 +33,13 @@ function App() {
         <ResumePage />
       </Route>
       <Route path="/portfolios" exact>
-        <ContactPage />
+        <PortfoliosPage />
       </Route>
       <Route path="/blogs" exact>
         <BlogsPage />
       </Route>
       <Route path="/contact" exact>
-        <PortfoliosPage />
+        <ContactPage />
       </Route>
     </Switch>
 
