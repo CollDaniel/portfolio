@@ -9,42 +9,50 @@ import analytics from "../images/mapa.png";
 
 function ServicesSection() {
   return (
-    <InnerLayout>
-      <ServicesSectionStyled>
-        <Title title={"Services"} span={"services"} />
-        <div className="services">
-          <ServiceCard
-            image={design}
-            title={"Web Design"}
-            paragraph={"Lorem 1 Lorem 1  Lorem 1 Lorem 1 Lorem 1 Lorem 1 Lorem 1"}
-          />
-         <div className="mid-card">
-         <ServiceCard
-            image={intelligence}
-            title={"Artifitial Inteligence"}
-            paragraph={"Lorem 2 Lorem 2 Lorem 2 Lorem 2 Lorem 2 Lorem 2 Lorem 2"}
-          />
-         </div>
-          <ServiceCard
-            image={analytics}
-            title={"Digital Analytics"}
-            paragraph={"Lorem 3 Lorem 3 Lorem 3 Lorem 3 Lorem 3 v Lorem 3 Lorem 3"}
-          />
-        </div>
-      </ServicesSectionStyled>
-    </InnerLayout>
-  );
+      <InnerLayout>
+          <ServicesSectionStyled>
+              <Title title={'Services'} span={'services'} />
+              <div className="services">
+                  <ServiceCard 
+                      image={design} 
+                      title={'Web Design'} 
+                      paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                  />
+                  <div className="mid-card">
+                      <ServiceCard 
+                          image={intelligence} 
+                          title={'Artificial Intelligence'} 
+                          paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                      />
+                  </div>
+                  <ServiceCard 
+                      image={analytics} 
+                      title={'Game Development'} 
+                      paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                  />
+              </div>
+          </ServicesSectionStyled>
+      </InnerLayout>
+  )
 }
 
 const ServicesSectionStyled = styled.section`
-.services{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between;
-    .mid-card{
-        margin: 0 1.2rem;
-    }
-}
+  .services{
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.5rem;
+      @media screen and (max-width:1000px){
+          flex-direction: column;
+      }
+      @media screen and (max-width:950px){
+          grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width:650px){
+          grid-template-columns: repeat(1, 1fr);
+      }
+     
+  }
 `;
 
 export default ServicesSection;
