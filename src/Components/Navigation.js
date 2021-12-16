@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import avatar from "../images/pexels-lukas-577210.jpg";
 
 function Navigation() {
+
   return (
       <NavigationStyled>
           <div className="avatar">
@@ -13,7 +14,7 @@ function Navigation() {
               <li className="nav-item">
                   <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
               </li>
-              <li className="nav-item">
+              <li>
                   <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
               </li>
               <li className="nav-item">
@@ -98,6 +99,7 @@ const NavigationStyled = styled.nav`
   }
   footer{
       border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
       width: 100%;
       p{
           padding: 1.3rem 0;
@@ -107,4 +109,5 @@ const NavigationStyled = styled.nav`
       }
   }
 `;
+
 export default Navigation;
