@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GithubIcon from '@material-ui/icons/GitHub';
 import YoutubeIcon from '@material-ui/icons/YouTube';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function HomePage() {
     return (
@@ -22,7 +23,10 @@ function HomePage() {
                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
                </p>
                <div className="icons">
-                   <a href="https://github.com/CollDaniel" className="icon i-twitter">
+                   <a href="https://github.com/CollDaniel" className="icon i-linkedin">
+                       <LinkedInIcon />
+                   </a>
+                   <a href="https://github.com/CollDaniel" className="icon i-x">
                        <TwitterIcon />
                    </a>
                    <a href="https://github.com/CollDaniel" className="icon i-github">
@@ -82,6 +86,18 @@ const HomePageStyled = styled.header`
                 &:hover{
                     border: 2px solid #5F4687;
                     color: #5F4687;
+                }
+            }
+            .i-x{
+                &:hover{
+                    border: 2px solid #ffffff;
+                    color: #ffffff;
+                }
+            }
+            .i-linkedin{
+                &:hover{
+                    border: 2px solid #0077B5;
+                    color: #0077B5;
                 }
             }
         }

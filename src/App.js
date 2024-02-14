@@ -14,7 +14,7 @@ import { Route, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
 import { IconButton } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-import avatar from "./images/pexels-lukas-577210.jpg";
+import avatar from "./images/Logo.png";
 
 
 
