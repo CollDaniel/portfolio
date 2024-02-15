@@ -15,7 +15,7 @@ function HomePage() {
            <div className="typography">
                <h1>Hi, I´m <span> Daniel Coll</span></h1>
                <p>
-               <b> Martech & Data Analytics Expert | 7+ Years Driving Success with Data-Driven Strategies</b> 
+               <b> Martech & Data Analytics Expert <br></br> 7+ Years Driving Success with Data-Driven Strategies</b> 
                </p>
                <br></br>
                <p>Transforming data into actionable insights, mastering the data journey and crafting personalized experiences through omnichannel strategies.
