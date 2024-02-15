@@ -6,35 +6,31 @@ import PrimaryButton from "./PrimaryButton";
 function ImageSection() {
     return (
         <ImageSectionStyled>
-            <div className="left-content">
-                <img src={resume} alt=""/>
-            </div>
+           
             <div className="right-content">
-                <h4>I am <span>Lorem Ipsum</span></h4>
+                <h4>I am a <span>Data storyteller & collaborator</span></h4>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, natus quas vero enim 
-                    praesentium delectus est id fugiat ab libero adipisci recusandae at maxime veritatis! 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt.
-                    
+                More than just analyzing data, I translate it into impactful stories that drive success. Beyond the expertise, I bring a collaborative spirit and infectious curiosity to every project. Communication, diverse perspectives, and building relationships are key to unlocking data's true value. Let's connect and turn data into impact!
                 </p>
                 <div className="about-info">
                     <div className="info-title">
-                        <p>Full Name</p>
-                        <p>Age</p>
-                        <p>Nationality </p>
-                        <p>Languages </p>
-                        <p>Location</p>
-                        <p>Service</p>
+                        <p>Full Name:</p>
+                        <p>Nationality:</p>
+                        <p>Languages:</p>
+                        <p>Location:</p>
+                        <p>Services:</p>
                     </div>
                     <div className="info">
-                        <p>: Lorem Ipsum</p>
-                        <p>: 36</p>
-                        <p>: Spainsh </p>
-                        <p>: Spanish, French, English </p>
-                        <p>: London, United Kingdom</p>
-                        <p>: Freelance</p>
+                        <p>Daniel Coll Ramírez</p>                        
+                        <p>Colombia </p>
+                        <p>Spanish, English </p>
+                        <p>Bogotá, Colombia</p>
+                        <p>Data Analysis and Visualization</p>
                     </div>
                 </div>
+                <div className="left-content">
+                <img src={resume} alt=""/>
+            </div>
                 <PrimaryButton title={'Download Cv'} />
             </div>
         </ImageSectionStyled>
@@ -54,7 +50,7 @@ const ImageSectionStyled = styled.div`
     .left-content{
         width: 100%;
         img{
-            width: 95%;
+            width: 30%;
             object-fit: cover;
         }
     }

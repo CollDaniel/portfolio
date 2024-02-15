@@ -13,26 +13,29 @@ function HomePage() {
                <Particle />
            </div>
            <div className="typography">
-               <h1>Hi, I´m <span> Daniel</span></h1>
+               <h1>Hi, I´m <span> Daniel Coll</span></h1>
                <p>
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                   Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+               <b> Martech & Data Analytics Expert | 7+ Years Driving Success with Data-Driven Strategies</b> 
                </p>
+               <br></br>
+               <p>Transforming data into actionable insights, mastering the data journey and crafting personalized experiences through omnichannel strategies.
+                </p>
+                {/* <p>
+                 Passionate about martech innovation and measurable results. 
+               </p> */}
+               <br></br>
+               <b><p>#Martech #DataDriven #Leadership #Strategy #DataVisualization #Analytics</p></b>
                <div className="icons">
-                   <a href="https://github.com/CollDaniel" className="icon i-linkedin">
+                   <a href="https://bit.ly/Portfolio_Page-Home-Social-LinkedIn" className="icon i-linkedin">
                        <LinkedInIcon />
                    </a>
-                   <a href="https://github.com/CollDaniel" className="icon i-x">
+                   <a href="https://bit.ly/Portfolio_Page-Home-Social-X" className="icon i-x">
                        <TwitterIcon />
                    </a>
-                   <a href="https://github.com/CollDaniel" className="icon i-github">
+                   <a href="https://bit.ly/Portfolio_Page-Home-Social-GitHub" className="icon i-github">
                         <GithubIcon />
                     </a>
-                   <a href="https://www.youtube.com/channel/UCIaX9sL9Un7Ito9t7qIuhZw" className="icon i-youtube">
+                   <a href="https://bit.ly/Portfolio_Page-Home-Social-YouTube" className="icon i-youtube">
                         <YoutubeIcon />
                     </a>
                 </div>
@@ -53,6 +56,7 @@ const HomePageStyled = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         width: 80%;
+        color: white;
         .icons{
             display: flex;
             justify-content: center;

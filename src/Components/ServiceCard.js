@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-function ServiceCard({image, title, paragraph }) {
+function ServiceCard({ image, title, paragraph }) {
   return (
     <ServiceCardStyled>
       <div className="container">
-        <img src={image} alt="" />
-        <h4>{title}</h4>
+        <div className="icon-text">
+          <img src={image} alt="" />
+        </div>
+          <h4>{title}</h4>
         <p>{paragraph}</p>
       </div>
     </ServiceCardStyled>
@@ -31,6 +33,7 @@ const ServiceCardStyled = styled.div`
             font-size: 1.6rem;
             padding: 1rem 0;
             position: relative;
+            justify-content: center;
             &::after{
                 content: "";
                 width: 4rem;
@@ -40,12 +43,22 @@ const ServiceCardStyled = styled.div`
                 left: 0;
                 bottom: 0;
                 border-radius: 10px;
+                
             }
         }
         p{
             padding: .8rem 0;
         }
+        img{
+          width: 15%;
+        }
     }
+    .icon-text {
+  display: flex;
+  align-items: right; /* Vertically align image and h4 */
+  justify-content: center;
+
+}
 `;
 
 export default ServiceCard;

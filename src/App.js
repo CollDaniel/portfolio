@@ -55,17 +55,17 @@ function App() {
                   <NavLink onClick={() => setNavToggle(!navToggle)} to="/resume" activeClassName="active-class" exact>Resume</NavLink>
               </li>
               <li className="nav-item">
-                  <NavLink onClick={() => setNavToggle(!navToggle)} to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+                  <NavLink onClick={() => setNavToggle(!navToggle)} to="/portfolios" activeClassName="active-class" exact>Portfolio</NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                   <NavLink onClick={() => setNavToggle(!navToggle)} to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                   <NavLink onClick={() => setNavToggle(!navToggle)} to="/contact" activeClassName="active-class" exact>Contact</NavLink>
               </li>
           </ul>
           <footer className="footer">
-              <p>@2021 <b>Lorem Ipsum</b></p>
+              <p>@2024</p>
           </footer>
       </NavigationStyled>
         </SidebarStyled>
@@ -80,7 +80,7 @@ function App() {
                   value=""
                   checked={checked}
                   inputProps={{ 'aria-label': '' }}
-                  size="medium"
+                  size="small"
                   onClick={themeToggler}
                   
                 />
@@ -177,7 +177,7 @@ const NavigationStyled = styled.nav`
   width: 100%;
   border-right: 1px solid var(--border-color);
   .avatar{
-      width: 100%;
+      width: 50%;
       border-bottom: 1px solid var(--border-color);
       text-align: center;
       padding: 1rem 0;

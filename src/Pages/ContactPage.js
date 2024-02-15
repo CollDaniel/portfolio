@@ -52,20 +52,19 @@ function ContactPage() {
             <ContactItem
               title={"Phone"}
               icon={phone}
-              contact1={"+66-789675637"}
-              contact2={"07663520283"}
+              contact1={<a href="tel:+573057240150">+573057240150</a>}
             />
             <ContactItem
               title={"Email"}
               icon={email}
               contact1={<a href="mailto:danielcollramirez@gmail.com">danielcollramirez@gmail.com</a>}
-              contact2={"info.lorem.ipsum@gmail.com"}
+              // contact2={"info.lorem.ipsum@gmail.com"}
             />
             <ContactItem
-              title={"Address"}
+              title={"Location"}
               icon={location}
-              contact1={"27 Aldrich Road, London, England"}
-              contact2={"United Kingdom"}
+              contact1={"Bogotá D.C."}
+              contact2={"Colombia"}
             />
           </div>
         </InnerLayout>

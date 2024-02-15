@@ -4,16 +4,16 @@ import ImageSection from '../Components/ImageSection';
 import Title from '../Components/Title';
 import {MainLayout} from '../styles/Layouts';
 import ServicesSection from '../Components/ServicesSection';
-import ReviewsSection from '../Components/ReviewsSection';
+// import ReviewsSection from '../Components/ReviewsSection';
 
 function AboutPage() {
     return (
         <MainLayout>
             <AboutStyled >
-                <Title title={'About Me'} span={'About Me'} />
+                <Title title={'About Me'} span={'Welcome'} />
                 <ImageSection />
                 <ServicesSection />
-                <ReviewsSection />
+                {/* <ReviewsSection /> */}
             </AboutStyled >
         </MainLayout>
     )
