@@ -2,26 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
-import PrimaryButton from "../Components/PrimaryButton";
+// import PrimaryButton from "../Components/PrimaryButton";
 import ContactItem from "../Components/ContactItem";
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+
 
 function ContactPage() {
   const phone = <PhoneIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;
+  const whatsapp = <WhatsAppIcon />;
   return (
     <MainLayout>
-      <Title title={"Contact"} span={"Contact"} />
+      <Title title={"Get In Touch"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
           <div className="left-content">
-            <div className="contact-title">
+            {/* <div className="contact-title">
               <h4>Get In Touch</h4>
-            </div>
-            <form className="form">
+            </div> */}
+            <ContactItem
+              title={"Phone"}
+              icon={phone}
+              contact1={<a href="tel:+573057240150">+573057240150</a>}
+            />
+            <ContactItem
+              title={"WhastApp"}
+              icon={whatsapp}
+              contact1={<a href="https://wa.me/573057240150?text=Hi,%20Daniel%20I%20was%20visiting%20your%20portfolio%20and%20I%20would%20like%20to%20connect%20with%20you.">Chat Me</a>}
+            />
+            {/* <form className="form">
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
                 <input type="text" id="name" />
@@ -46,14 +59,10 @@ function ContactPage() {
               <div className="form-field f-button">
                 <PrimaryButton title={"Send Email"} />
               </div>
-            </form>
+            </form> */}
           </div>
           <div className="right-content">
-            <ContactItem
-              title={"Phone"}
-              icon={phone}
-              contact1={<a href="tel:+573057240150">+573057240150</a>}
-            />
+      
             <ContactItem
               title={"Email"}
               icon={email}
@@ -63,8 +72,7 @@ function ContactPage() {
             <ContactItem
               title={"Location"}
               icon={location}
-              contact1={"Bogotá D.C."}
-              contact2={"Colombia"}
+              contact1={"Bogotá D.C., Colombia"}
             />
           </div>
         </InnerLayout>

@@ -6,8 +6,10 @@ import Title from "./Title";
 import design from "../images/balanza.png";
 import intelligence from "../images/bolsa.png";
 import analytics from "../images/mapa.png";
+// import PollIcon from '@material-ui/icons/Poll';
 
 function ServicesSection() {
+    // const poll = <PollIcon />;
   return (
       <InnerLayout>
           <ServicesSectionStyled>

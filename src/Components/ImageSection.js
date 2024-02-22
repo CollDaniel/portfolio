@@ -6,9 +6,11 @@ import PrimaryButton from "./PrimaryButton";
 function ImageSection() {
     return (
         <ImageSectionStyled>
-           
+             <div className="left-content">
+                <img src={resume} alt=""/>
+            </div>
             <div className="right-content">
-                <h4>I am a <span>Data storyteller & collaborator</span></h4>
+                <h4>I am a <span>Data storyteller</span></h4>
                 <p className="paragraph">
                 More than just analyzing data, I translate it into impactful stories that drive success. Beyond the expertise, I bring a collaborative spirit and infectious curiosity to every project. Communication, diverse perspectives, and building relationships are key to unlocking data's true value. Let's connect and turn data into impact!
                 </p>
@@ -28,9 +30,7 @@ function ImageSection() {
                         <p>Data Analysis and Visualization</p>
                     </div>
                 </div>
-                <div className="left-content">
-                <img src={resume} alt=""/>
-            </div>
+              
                 <PrimaryButton title={'Download Cv'} />
             </div>
         </ImageSectionStyled>
@@ -50,8 +50,9 @@ const ImageSectionStyled = styled.div`
     .left-content{
         width: 100%;
         img{
-            width: 30%;
-            object-fit: cover;
+            width: 100%;
+            object-fit: contain;
+            padding: 1rem;
         }
     }
     .right-content{
