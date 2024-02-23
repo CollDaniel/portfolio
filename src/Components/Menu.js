@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
-import Pinterest from '@material-ui/icons/Pinterest';
+import YouTube from '@material-ui/icons/YouTube';
 
 function Menu({menuItem}) {
     return (
@@ -20,14 +20,15 @@ function Menu({menuItem}) {
                                     </li>
                                     <li>
                                         <a href={item.link2}>
-                                            <Pinterest />
+                                            <YouTube />
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <h6>{item.title}</h6>
+                                <h6>{item.title}</h6>
                             <p>{item.text}</p>
+                            </div>
                         </div>
+                            
                     </div>
                 })
             }
@@ -71,19 +72,19 @@ const MenuItemStyled = styled.div`
                         align-items: center;
                         justify-content: center;
                         padding: 1rem;
-                        border-radius: 50%;
+                        border-radius: 100%;
                         width: 3rem;
                         height: 3rem;
                         margin: 0 .5rem;
                         transition: all .4s ease-in-out;
                         &:hover{
-                            background-color: var(--primary-color);
+                            background-color: var(white);
                         }
                         a{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            transition: all .4s ease-in-out;
+                            /* transition: all .4s ease-in-out; */
                         }
                     }
             }
@@ -91,14 +92,14 @@ const MenuItemStyled = styled.div`
                 &::before{
                     content: "";
                     position: absolute;
-                    left: 2%;
-                    top: 4%;
+                    left: 0%;
+                    top: 0%;
                     height: 0;
                     width: 0;
                     transition: all .4s ease-in-out;
                 }
             }
-            .portfolio-image:hover{
+            .portfolio-image:hover{               
                 ul{
                     transform: translateY(0);
                     transform: translate(-50%, -50%);
@@ -110,7 +111,7 @@ const MenuItemStyled = styled.div`
                     li{
                         transition: all .4s ease-in-out;
                         &:hover{
-                            background-color: var(--primary-color);
+                            background-color: var(white);
                         }
                         a{
                             display: flex;
@@ -129,13 +130,12 @@ const MenuItemStyled = styled.div`
                     }
                 }
                 &::before{
-                    height: calc(100% - 32%) ;
-                    width: calc(100% - 4%);
-                    background-color: white;
-                    opacity: 0.9;
-                    transform-origin: left;
-                    
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(to bottom, #2B8C7B 0%, rgba(43, 140, 123, 0) 100%);
+                    opacity: 0.9;                    
                     transition: all .4s ease-in-out;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
                 }
             }
         }
